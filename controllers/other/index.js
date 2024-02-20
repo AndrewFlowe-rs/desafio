@@ -1,5 +1,6 @@
-const menu = require("../../data/menus.json")
 
-module.exports = (req,res) => {
-    res.render("index", {menus})
+
+module.exports = {
+    index: require("./home.controller"),
+    detalle:require("./detalle.menu.controller"),
 }
